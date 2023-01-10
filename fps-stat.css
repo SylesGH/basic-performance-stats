@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
+
+section.syles.fps-graph > * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section.syles.fps-graph {
+    position: var(--position);
+    z-index: var(--z-index);
+    max-width: 85px;
+    min-width: 80px;
+    width: -webkit-fill-available;
+    background: #333333cc;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+section.syles.fps-graph > div {
+    display: flex;
+    flex-direction: column;
+    outline: 3px solid #222;
+}
+
+section.syles.fps-graph div .fps-text, section.syles.fps-graph div #ping {
+    width: -webkit-fill-available;
+    background: #222;
+}
+
+section.syles.fps-graph div, section.syles.fps-graph div .fps-text, section.syles.fps-graph div #ping {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.syles.fps-graph div .fps-text h1, section.syles.fps-graph div #ping h1 {
+    background: #222;
+    color: #eee;
+    margin: 1px 2px;
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+section.syles.fps-graph div #graph {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    height: 30px;
+    min-width: 74px;
+    max-width: 100px;
+    width: -webkit-fill-available;
+    overflow: hidden;
+}
+
+section.syles.fps-graph div #graph span {
+    height: 0px;
+    box-sizing: border-box;
+    background: #aaa;
+    float: left;
+    flex: 1;
+}
+
+section.syles.fps-graph div #ping {
+    border-top: 2px solid #222;
+}
